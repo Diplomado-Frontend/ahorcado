@@ -12,5 +12,6 @@ let words: string[] = [
   ];
 
   export const getRandomWords = () => {
-    return "Hello";
+    const randomIndex = Math.floor(Math.random() * words.length);
+    return words[randomIndex];
   }

@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import  { letters } from "./helpers/letters"; 
+import  { getRandomWords } from "./helpers/getRandomWords"; 
 import HangImage from "../src/components/hangImage";
 import './App.css'
 
 function App() {
 
   const [intent, setIntents] = useState(0);
+  const [words, setWords] = useState("HelloWorld");
 
   //Word's validation
   const validateWords = (letter: string) => {
@@ -34,7 +36,7 @@ function App() {
 
       { /* message if lose */ }
 
-      <h3 className="font-bold text-2xl my-4 text-red-600">You are lose!! 😩</h3>
+      <h3 className="font-bold text-2xl my-4 text-red-600">You are lose!! 😩 your word is: { getRandomWords() }</h3>
 
       { /* message if win */ }
 
