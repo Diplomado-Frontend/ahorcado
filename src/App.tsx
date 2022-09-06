@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import  { letters } from "./helpers/letters"; 
-import hangImage from "./components/hangImage"; 
+import HangImage from "../src/components/hangImage";
 import './App.css'
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
 
       { /* Images */ }
 
-      <hangImage imageNumber={5}/>
+      <HangImage imageNumber={5}/>
 
 
       { /* hidden word */ }

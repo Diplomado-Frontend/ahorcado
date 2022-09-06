@@ -26,7 +26,7 @@ interface Props {
     imageNumber: number;
 }
 
-const hangImage = ({ imageNumber }: Props ) => {
+const HangImage = ({ imageNumber }: Props ) => {
 
     if(imageNumber >= 9) {
         imageNumber = 9;
@@ -36,4 +36,4 @@ const hangImage = ({ imageNumber }: Props ) => {
   
 };
 
-export default hangImage;
+export default HangImage;
