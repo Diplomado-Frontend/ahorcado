@@ -4,7 +4,13 @@ import HangImage from "../src/components/hangImage";
 import './App.css'
 
 function App() {
-  // const [count, setCount] = useState(0)
+
+  const [intent, setIntents] = useState(0);
+
+  //Word's validation
+  const validateWords = (letter: string) => {
+    console.log(letter);
+  }
 
     // const onHandledClickLetter = (e) => {
     //     e.preventDefault();    
@@ -24,7 +30,7 @@ function App() {
 
       { /* try count */ }
 
-      <h3 className="font-bold text-2xl my-4 text-blue-600"> try: 0 </h3>
+      <h3 className="font-bold text-2xl my-4 text-blue-600"> try: {intent} </h3>
 
       { /* message if lose */ }
 
@@ -39,8 +45,10 @@ function App() {
       { letters.map((letter) => (       
         <button className="bg-white p-4 rounded-full shadow-md m-2" 
                 key={letter}
+                onClick={ () => validateWords(letter)}
                 >{letter}</button>
        ))}
+       <br />
 
       { /* new game's button */ }
 
