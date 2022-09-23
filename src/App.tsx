@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import  { letters } from "./helpers/letters"; 
 import  { getRandomWords } from "./helpers/getRandomWords"; 
-import HangImage from "./components/HangImage";
+import HangImage from "./Components/HangImage";
 import './App.css'
 
 function App() {
